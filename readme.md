@@ -90,6 +90,6 @@ Recent studies have explored enhancing financial sentiment analysis by integrati
 
 FinEAS introduces a new language representation model tailored for financial sentiment analysis. By fine-tuning sentence embeddings from a standard BERT model, FinEAS achieves notable improvements over vanilla BERT, LSTM, and even FinBERT in sentiment classification tasks. (arXiv)
 
-https://arxiv.org/abs/2111.00526(https://arxiv.org/pdf/2111.00526)
+https://arxiv.org/abs/2111.00526
 
 These advancements indicate a trend towards leveraging specialized LLMs and retrieval-augmented techniques to enhance the accuracy and efficiency of financial sentiment analysis, surpassing the performance of earlier BERT+LSTM models.
