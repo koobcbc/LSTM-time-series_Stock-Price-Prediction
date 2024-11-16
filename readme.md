@@ -90,6 +90,106 @@ Recent studies have explored enhancing financial sentiment analysis by integrati
 
 FinEAS introduces a new language representation model tailored for financial sentiment analysis. By fine-tuning sentence embeddings from a standard BERT model, FinEAS achieves notable improvements over vanilla BERT, LSTM, and even FinBERT in sentiment classification tasks. (arXiv)
 
+
 https://arxiv.org/abs/2111.00526
 
 These advancements indicate a trend towards leveraging specialized LLMs and retrieval-augmented techniques to enhance the accuracy and efficiency of financial sentiment analysis, surpassing the performance of earlier BERT+LSTM models.
+
+Project Future Steps:
+
+1. Data Collection
+
+a. Stock Price Data (NVDA):
+
+	•	Use an API like Yahoo Finance or Alpha Vantage to download NVIDIA stock price data.
+	•	Collect historical data, including:
+	•	Open, High, Low, Close prices (OHLC).
+	•	Volume.
+	•	Optional: Technical indicators (e.g., Moving Averages, RSI).
+
+b. News Sentiment Data:
+
+	•	Use a financial news API like NewsAPI, Google News, or Twitter (for social media sentiment).
+	•	Extract headlines, article summaries, or tweets related to NVIDIA.
+	•	Apply BERT or FinBERT to classify the sentiment of each piece of text into categories like Positive, Neutral, or Negative.
+
+2. Preprocessing the Data
+
+a. Stock Price Features:
+
+	•	Create lagged features (e.g., previous day’s closing price, moving averages).
+	•	Normalize/standardize numerical data.
+
+b. Sentiment Features:
+
+	•	For each day:
+	•	Aggregate news sentiment scores for that day (e.g., average sentiment).
+	•	Use time alignment to match sentiment scores with stock price data.
+
+3. Model Implementation
+
+Models to Compare:
+
+	1.	BERT + LSTM (Baseline from the Paper):
+	•	Sentiment analysis using BERT on news data.
+	•	Feed sentiment scores into an LSTM along with stock price features for prediction.
+	2.	FinBERT:
+	•	Use FinBERT for sentiment analysis instead of general-purpose BERT.
+	•	Compare how its domain-specific training impacts prediction accuracy.
+	3.	FinEAS:
+	•	Fine-tune sentence embeddings with financial data and use them in a regression/prediction model.
+	4.	FinLLaMA:
+	•	Fine-tune LLaMA 2 for financial sentiment classification and include sentiment as features in the model.
+	5.	Retrieval-Augmented LLMs:
+	•	Incorporate external sources (e.g., real-time financial data) alongside sentiment to improve prediction robustness.
+
+4. Evaluation Metrics
+
+To compare models, consider:
+
+	•	Prediction Accuracy: How close predictions are to actual stock prices.
+	•	Mean Squared Error (MSE): Measures average squared difference between predicted and actual prices.
+	•	Directional Accuracy: Measures how often the model correctly predicts the direction of stock price movement (up or down).
+	•	F1 Score: To evaluate sentiment classification performance (if needed).
+
+5. Workflow for Model Training
+
+a. Feature Engineering:
+
+	•	Combine numerical stock price data with sentiment scores.
+
+b. Training and Testing:
+
+	•	Split data into train, validation, and test sets (e.g., 70%-20%-10%).
+	•	Fine-tune each model on the training data and validate it on the test set.
+
+c. Implementing Models:
+
+	•	BERT + LSTM:
+	•	Train a BERT model for sentiment classification.
+	•	Feed sentiment features and stock data into an LSTM for price prediction.
+	•	FinBERT and FinLLaMA:
+	•	Fine-tune these models using NVIDIA-specific financial data.
+	•	FinEAS:
+	•	Embed financial text using FinEAS and use embeddings for regression.
+	•	Retrieval-Augmented LLMs:
+	•	Include external contextual data (e.g., related stock market trends).
+
+6. Tools and Libraries
+
+	•	Data Collection:
+	•	yfinance, pandas_datareader, or APIs for stock prices.
+	•	NewsAPI, tweepy for news and social media data.
+	•	Machine Learning Frameworks:
+	•	transformers (for BERT, FinBERT, and LLaMA).
+	•	TensorFlow or PyTorch (for LSTM).
+	•	Scikit-learn (for evaluation metrics).
+	•	Deep Learning Libraries:
+	•	Hugging Face Transformers for pre-trained NLP models.
+	•	keras or pytorch-lightning for LSTM implementation.
+
+7. Comparative Results
+
+	•	Train all models on the same dataset.
+	•	Compare their performance using the evaluation metrics.
+	•	Visualize results (e.g., prediction vs. actual prices) and tabulate metrics.
