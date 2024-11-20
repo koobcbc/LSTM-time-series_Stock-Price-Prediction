@@ -4,6 +4,12 @@ The BERT-based sentiment index outperforms traditional approaches (e.g., Multich
 
 Demonstrates that LSTM (a nonlinear method) significantly outperforms traditional econometric models like Vector Autoregression (VAR).
 
+
+Dataset
+
+Sentiment Analysis Dataset (Train dataset)
+- This release of the financial phrase bank covers a collection of 4840 sentences. The selected collection of phrases was annotated by 16 people with adequate background knowledge on financial markets. Three of the annotators were researchers and the remaining 13 annotators were master’s students at Aalto University School of Business with majors primarily in finance, accounting, and economics.
+- 
 Key Findings:
 
 	1.	Sentiment Extraction:
