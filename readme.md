@@ -1,3 +1,15 @@
+Packages required:
+!pip install yfinance alpha_vantage pandas matplotlib
+!pip install GoogleNews
+!pip install chardet
+!pip install --upgrade keras transformers
+!pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+!pip install textblob
+!pip install nltk
+!pip install transformers
+!pip install keras==2.11
+!pip install tf-keras
+
 BERT-based Financial Sentiment Index and LSTM-based Stock Return Predictability
 
 The BERT-based sentiment index outperforms traditional approaches (e.g., Multichannel CNN, BiLSTM, FastText) in precision, recall, and F1 score.
