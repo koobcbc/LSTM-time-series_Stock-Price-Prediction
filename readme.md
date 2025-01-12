@@ -1,29 +1,14 @@
-Packages required:
-!pip install yfinance alpha_vantage pandas matplotlib
-!pip install GoogleNews
-!pip install chardet
-!pip install --upgrade keras transformers
-!pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
-!pip install textblob
-!pip install nltk
-!pip install transformers
-!pip install keras==2.18
-!pip install tf-keras
-
 # BERT-based Financial Sentiment Index and LSTM-based Stock Prediction
 
----
 ## Aim
 To perform BERT-based sentiment index on news headlines from Google and Benzinga to predict future stock returns using LSTM-based non-linear model.
 
----
 ## Setup Instructions
 ```
 $ pip install -r requirements.txt
 $ python scripts/[name_of_file].py <input-dir> <output-dir>
 ```
 
----
 ## Methodology
 1. News Headline and Stock Data Fetching & Integration
 2. Data Cleaning
@@ -32,13 +17,11 @@ $ python scripts/[name_of_file].py <input-dir> <output-dir>
 4. TFDistilBert Model Training
 5. Forecasting & Evalution
 
----
 ## Research Paper that inspired me
 
 1. Twitter mood predicts the stock market (https://www.sciencedirect.com/science/article/abs/pii/S187775031100007X)
 2. Paper ()
 
----
 ## Dataset used
 
 1. Sentiment Analysis Dataset from Kaggle
@@ -49,14 +32,13 @@ The BERT-based sentiment index outperforms traditional approaches (e.g., Multich
 Demonstrates that LSTM (a nonlinear method) significantly outperforms traditional econometric models like Vector Autoregression (VAR).
 
 
-Dataset
+## Dataset
 
 Sentiment Analysis Dataset (Train dataset)
 - This release of the financial phrase bank covers a collection of 4840 sentences. The selected collection of phrases was annotated by 16 people with adequate background knowledge on financial markets. Three of the annotators were researchers and the remaining 13 annotators were master’s students at Aalto University School of Business with majors primarily in finance, accounting, and economics.
 
 
----
-Key Findings:
+## Key Findings:
 
 	1.	Sentiment Extraction:
 	•	Sentiment polarity (positive, neutral, negative) is assigned to Weibo posts using BERT, achieving high accuracy.
@@ -70,10 +52,10 @@ Key Findings:
 	4.	Limitations:
 	•	Overfitting in LSTM models observed for longer-term predictions.
 	•	Findings are restricted to individual stock-level analysis, and market-level generalization requires future research.
----
-Helpful Resources:
 
- Implications:
+## Helpful Resources:
+
+## Implications:
 
 	1.	Investors and Analysts:
 	•	Can use BERT-based sentiment indices for more accurate and real-time insights into market sentiment.
@@ -83,13 +65,12 @@ Helpful Resources:
 	3.	Future Research:
 	•	Extending the analysis to broader markets.
 	•	Addressing overfitting in longer-term stock return predictions.
- ---
- Conclusion:
+ 
+ ## Conclusion:
 
 The study establishes a novel framework by combining BERT and LSTM to build sentiment indices and predict stock returns. It highlights the superiority of these approaches over traditional econometric methods, emphasizing the nonlinear impact of investor sentiment on stock prices.
 
----
-Future Steps:
+## Future Steps:
 
 Some other novel models to compare:
 
