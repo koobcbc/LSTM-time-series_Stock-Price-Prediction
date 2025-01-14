@@ -20,7 +20,7 @@ $ python scripts/[name_of_file].py <input-dir> <output-dir>
 ## Research Paper that inspired me
 
 1. Twitter mood predicts the stock market (https://www.sciencedirect.com/science/article/abs/pii/S187775031100007X)
-2. Paper ()
+2. BERT-based Financial Sentiment Index and LSTM-based Stock Return Predictability (https://arxiv.org/abs/1906.09024)
 
 ## Dataset used
 
