@@ -65,6 +65,7 @@ Models to Compare:
 	•	Sentiment analysis using BERT on news data.
 	•	Feed sentiment scores into an LSTM along with stock price features for prediction.
  In the future...
+ 
 	2.	FinBERT:
 	•	Use FinBERT for sentiment analysis instead of general-purpose BERT.
 	•	Compare how its domain-specific training impacts prediction accuracy.
