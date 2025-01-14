@@ -102,6 +102,7 @@ c. Implementing Models:
 
 6. Tools and Libraries
 
+```
 	•	Data Collection:
 	•	yfinance, pandas_datareader, or APIs for stock prices.
 	•	NewsAPI, tweepy for news and social media data.
@@ -112,6 +113,7 @@ c. Implementing Models:
 	•	Deep Learning Libraries:
 	•	Hugging Face Transformers for pre-trained NLP models.
 	•	keras or pytorch-lightning for LSTM implementation.
+```
 
 ## Key Findings:
 
