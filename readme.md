@@ -128,8 +128,6 @@ c. Implementing Models:
 	•	Overfitting in LSTM models observed for longer-term predictions.
 	•	Findings are restricted to individual stock-level analysis, and market-level generalization requires future research.
 
-## Helpful Resources:
-
 ## Implications:
 
 	1.	Investors and Analysts:
